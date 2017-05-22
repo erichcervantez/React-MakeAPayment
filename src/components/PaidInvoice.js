@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import './Invoices.css';
 
-class OpenInvoice extends Component {
+class PaidInvoice extends Component {
   render() {
     console.log(this.props)
     return (
-      <div className="OpenInvoice">
-        Open Invoice:<br/>
+      <div className="PaidInvoice">
+        Paid Invoice:<br/>
         <li>ID:  {this.props.invoice.id}</li>
         <li>AMOUNT:  {this.props.invoice.amount}</li>
         <br/>
@@ -15,4 +14,4 @@ class OpenInvoice extends Component {
   }
 }
 
-export default OpenInvoice;
+export default PaidInvoice;

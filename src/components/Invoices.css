@@ -1,4 +1,5 @@
 .Invoices {
+  font-weight: bold;
   text-align: left;
   padding: 10px;
 }
@@ -17,6 +18,17 @@
 
 .Invoices-intro {
   font-size: large;
+}
+
+.OpenInvoice {
+  color: red;
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+.PaidInvoice {
+  font-weight: bold;
+  padding-left: 30px;
 }
 
 @keyframes app-logo-spin {

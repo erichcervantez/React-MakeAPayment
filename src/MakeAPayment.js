@@ -7,14 +7,21 @@ class MakeAPayment extends Component {
   constructor() {
     super();
     this.state = {
-        openInvoices: [
+        invoices: [
             {
                 id: 1,
-                amount: 53.00
+                amount: 53.00,
+                type: 'open'
             },
             {
                 id: 2,
-                amount: 28.79
+                amount: 28.79,
+                type: 'open'
+            },
+            {
+                id: 3,
+                amount: 19.99,
+                type: 'paid'
             }
         ]
     }
@@ -27,7 +34,7 @@ class MakeAPayment extends Component {
           <img src={logo} className="MakeAPayment-logo" alt="logo" />
           <h2>React - Make A Payment</h2>
         </div>
-        <Invoices openInvoices={this.state.openInvoices}/>
+        <Invoices invoices={this.state.invoices}/>
       </div>
     );
   }
