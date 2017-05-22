@@ -1,0 +1,24 @@
+.MakeAPayment {
+  text-align: center;
+}
+
+.MakeAPayment-logo {
+  animation: MakeAPayment-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.MakeAPayment-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.MakeAPayment-intro {
+  font-size: large;
+}
+
+@keyframes MakeAPayment-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
