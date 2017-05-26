@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Invoices from './components/Invoices';
-import logo from './logo.svg';
-import './MakeAPayment.css';
+import Invoices from '../invoice/Invoices';
+import logo from './images/logo.svg';
+import './css/MakeAPayment.css';
 
 class MakeAPayment extends Component {
   constructor() {

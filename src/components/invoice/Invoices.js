@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Invoices.css';
+import './css/invoice.css';
 import OpenInvoice from './OpenInvoice';
 import PaidInvoice from './PaidInvoice';
 
@@ -13,12 +13,12 @@ class Invoices extends Component {
 
         if (invoice.type === 'open') {
           return (
-            <OpenInvoice invoice={invoice}/>
+            <OpenInvoice key={invoice.id} invoice={invoice}/>
           )
         }
         else if (invoice.type === 'paid') {
           return (
-            <PaidInvoice invoice={invoice}/>
+            <PaidInvoice key={invoice.id} invoice={invoice}/>
           )
         }
 
